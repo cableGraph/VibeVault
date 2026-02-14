@@ -46,8 +46,6 @@ contract BasicNftTest is Test {
 
         uint256 tokenId = 0;
         address initialOwner = basicNft.ownerOf(tokenId);
-
-        // Transfer by owner should succeed
         vm.prank(USER);
         basicNft.transferFrom(USER, address(3), tokenId);
 
