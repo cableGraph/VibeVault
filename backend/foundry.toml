@@ -7,8 +7,15 @@ remappings = ["@openzeppelin/contracts=lib/openzeppelin-contracts/contracts"]
 fs_permissions = [{ access = "read", path = "./img" }]
 
 [lint]
-# ... rest of lint config ...
-exclude_lints = ["incorrect-shift"]
+exclude_lints = [
+    "unsafe-typecast",
+    "mixed-case-variable",
+    "mixed-case-function",
+    "screaming-snake-case-immutable",
+    "screaming-snake-case-constant",
+    "unwrapped-modifier-logic",
+
+]
 
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
