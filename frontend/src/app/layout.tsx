@@ -6,14 +6,13 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { Header } from "./components/Headers"
 
 export const metadata: Metadata = {
-  title: "VibeVault",
+  title: "O'rligoly",
 };
 
 export default function RootLayout(props: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        Jaboya phenomena
         <Providers>
           <Header />
           {props.children}
